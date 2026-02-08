@@ -15,16 +15,22 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://siftyai.com"),
   title: "Sifty AI - Smart Photo Sorter",
   description:
     "AI-powered photo sorter that learns your preferences. Declutter your gallery, reclaim storage, and keep only the photos that matter.",
   keywords: ["photo sorter", "AI", "gallery cleaner", "storage", "photo organizer"],
+  icons: {
+    icon: "/logo.png",
+    apple: "/logo.png",
+  },
   openGraph: {
     title: "Sifty AI - Smart Photo Sorter",
     description:
       "AI-powered photo sorter that learns your preferences. Declutter your gallery and reclaim storage.",
     siteName: "Sifty AI",
     type: "website",
+    images: ["/logo.png"],
   },
 };
 
