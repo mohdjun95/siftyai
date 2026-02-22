@@ -38,17 +38,21 @@ export default function About() {
               </h2>
               <div className="space-y-4 text-gray-600 leading-relaxed">
                 <p>
-                  The average smartphone user has over 2,000 photos. Most are
-                  screenshots, duplicates, random snaps, and images that served
-                  a momentary purpose. Yet we keep them all because sorting
-                  through them manually is tedious and time-consuming.
+                  I had over 8,000 photos on my phone. Screenshots of things
+                  I&apos;d already dealt with. Food photos I&apos;d never look at
+                  again. Dozens of nearly identical shots from the same moment.
+                  Images that made sense at the time but were digital clutter
+                  months later. And I&apos;m not unusual &mdash; every friend or
+                  family member I talked to described the same experience.
                 </p>
                 <p>
-                  The result? Storage warnings, slow backups, and photo
-                  galleries where meaningful memories are buried under digital
-                  noise. Existing gallery apps offer bulk delete or basic
-                  filters, but nothing that truly understands what&apos;s important
-                  to you as an individual.
+                  The result? Storage warnings, slow backups, and a gallery
+                  where real memories were buried under noise. I tried existing
+                  gallery cleaners and duplicate finders, but they all had the
+                  same problem: they made deletion slightly easier without
+                  reducing the cognitive load of deciding what to keep. The real
+                  bottleneck was never the delete button &mdash; it was the
+                  8,000 decisions required to reach it.
                 </p>
                 <p>
                   That&apos;s the gap Sifty was built to fill.
@@ -90,7 +94,7 @@ export default function About() {
                 side="left"
                 label="Discovery"
                 title="Identifying the pain point"
-                description="User research revealed that 78% of smartphone users feel overwhelmed by their photo galleries but lack the motivation to sort manually. The average user spends 0 minutes per month organizing photos."
+                description="It started with my own phone — 8,000+ photos accumulated over nearly a decade, and zero motivation to sort through them. Conversations with friends and family confirmed this wasn't just my problem. Everyone's gallery was a mess, and nobody had a good solution."
               />
               <TimelineItem
                 side="right"
@@ -101,7 +105,7 @@ export default function About() {
               <TimelineItem
                 side="left"
                 label="Design"
-                title="The 2-phase learning model"
+                title="The learning and cleaning model"
                 description="Designed a streamlined learning system: the AI first learns your preferences through interactive review (Learning), then sorts the rest of your gallery with high confidence (Cleaning). Each phase reduces user effort while increasing AI accuracy."
               />
               <TimelineItem
@@ -109,6 +113,12 @@ export default function About() {
                 label="Build"
                 title="User Story + Master Context"
                 description="Built the AI to maintain two knowledge structures: a User Story (who you are, what you care about) and a Master Context (specific patterns learned from your decisions). Together, they create personalized photo intelligence."
+              />
+              <TimelineItem
+                side="right"
+                label="Discover"
+                title="Keyword search emerges from analysis infrastructure"
+                description="While building the AI analysis pipeline, a realization: the rich descriptions generated for scoring could power a standalone keyword search feature. A byproduct of the core system became a major differentiator — search your gallery by describing what you're looking for."
               />
               <TimelineItem
                 side="left"
@@ -142,7 +152,7 @@ export default function About() {
             <PrincipleCard
               number="02"
               title="Progressive disclosure"
-              description="Rather than overwhelming users with settings, Sifty learns through interaction. The 2-phase system gradually builds accuracy without demanding upfront configuration."
+              description="Rather than overwhelming users with settings, Sifty learns through interaction. The system gradually builds accuracy without demanding upfront configuration."
             />
             <PrincipleCard
               number="03"

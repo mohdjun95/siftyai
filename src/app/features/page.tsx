@@ -5,7 +5,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Features - Sifty AI",
   description:
-    "Explore the 2-phase AI learning system, smart recommendations, storage recovery, and more features of Sifty AI Photo Sorter.",
+    "Explore the AI learning system, smart recommendations, keyword search, and more features of Sifty AI Photo Sorter.",
 };
 
 export default function Features() {
@@ -25,12 +25,12 @@ export default function Features() {
         </div>
       </section>
 
-      {/* 2-Phase System Deep Dive */}
+      {/* Learning & Cleaning System Deep Dive */}
       <section className="bg-white py-16 md:py-24">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl font-bold text-gray-900">
-              The 2-Phase Learning System
+              The Learning &amp; Cleaning System
             </h2>
             <p className="mt-3 text-gray-600 max-w-xl mx-auto">
               First the AI learns you, then it cleans for you. Simple, effective,
@@ -38,7 +38,7 @@ export default function Features() {
             </p>
           </div>
 
-          {/* Phase 1 - Learning */}
+          {/* Learning */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-20">
             <div className="flex justify-center">
               <Image
@@ -51,7 +51,7 @@ export default function Features() {
             </div>
             <div>
               <div className="inline-flex items-center gap-2 bg-teal-100 text-teal-700 text-xs font-semibold px-3 py-1 rounded-full mb-4">
-                PHASE 1
+                LEARNING
               </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-4">
                 Learning &mdash; Understanding You
@@ -90,11 +90,11 @@ export default function Features() {
             </div>
           </div>
 
-          {/* Phase 2 - Cleaning */}
+          {/* Cleaning */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div className="order-2 md:order-1">
               <div className="inline-flex items-center gap-2 bg-teal-100 text-teal-700 text-xs font-semibold px-3 py-1 rounded-full mb-4">
-                PHASE 2
+                CLEANING
               </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-4">
                 Cleaning &mdash; High-Confidence Sorting
@@ -210,6 +210,61 @@ export default function Features() {
               title="Swipe to Decide"
               description="Intuitive swipe-based review interface. Keep or delete with a single tap or swipe, with real-time progress tracking."
             />
+            <FeatureCard
+              icon={
+                <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                </svg>
+              }
+              title="Keyword Search"
+              description="Find any photo by describing it. AI-generated descriptions stored on your device enable instant search across your entire gallery."
+            />
+          </div>
+        </div>
+      </section>
+
+      {/* Keyword Search Deep Dive */}
+      <section className="bg-white py-16 md:py-24">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div>
+              <div className="inline-flex items-center gap-2 bg-teal-100 text-teal-700 text-xs font-semibold px-3 py-1 rounded-full mb-4">
+                INSTANT DISCOVERY
+              </div>
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">
+                AI-Powered Keyword Search
+              </h3>
+              <p className="text-gray-600 leading-relaxed mb-4">
+                Every photo gets a rich description during AI analysis. These
+                descriptions are stored locally on your device, enabling you to
+                search your gallery like you&apos;d search the web.
+              </p>
+              <div className="bg-gray-50 rounded-xl p-4 border border-gray-100 mb-4">
+                <div className="text-xs font-semibold text-gray-500 uppercase mb-3">
+                  Example searches
+                </div>
+                <div className="grid grid-cols-2 gap-2">
+                  {["passport photo", "white pants at beach", "receipt from dinner", "sunset in Bali", "cat sleeping", "kids at playground"].map((q) => (
+                    <div key={q} className="text-sm text-gray-600 bg-white rounded-lg px-3 py-1.5 border border-gray-100">
+                      &ldquo;{q}&rdquo;
+                    </div>
+                  ))}
+                </div>
+              </div>
+              <p className="text-sm text-gray-500">
+                All descriptions are stored on your device. Search works offline.
+                Nothing is uploaded.
+              </p>
+            </div>
+            <div className="flex justify-center">
+              <Image
+                src="/ai-context.png"
+                alt="AI Context and Keyword Search"
+                width={260}
+                height={520}
+                className="rounded-[2rem] shadow-xl border border-gray-200"
+              />
+            </div>
           </div>
         </div>
       </section>

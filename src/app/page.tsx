@@ -67,16 +67,16 @@ export default function Home() {
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             <div>
-              <div className="text-3xl font-bold text-teal-600">2-Phase</div>
-              <div className="mt-1 text-sm text-gray-500">AI Learning System</div>
+              <div className="text-3xl font-bold text-teal-600">Learn</div>
+              <div className="mt-1 text-sm text-gray-500">Then Clean System</div>
             </div>
             <div>
-              <div className="text-3xl font-bold text-teal-600">99%</div>
+              <div className="text-3xl font-bold text-teal-600">High</div>
               <div className="mt-1 text-sm text-gray-500">Accuracy After Training</div>
             </div>
             <div>
-              <div className="text-3xl font-bold text-teal-600">48MB+</div>
-              <div className="mt-1 text-sm text-gray-500">Avg Storage Recovered</div>
+              <div className="text-3xl font-bold text-teal-600">Smart</div>
+              <div className="mt-1 text-sm text-gray-500">Gallery Decluttering</div>
             </div>
             <div>
               <div className="text-3xl font-bold text-teal-600">1000+</div>
@@ -94,20 +94,20 @@ export default function Home() {
               How Sifty Works
             </h2>
             <p className="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">
-              A 2-phase intelligent system that gets smarter with every decision
+              An intelligent system that gets smarter with every decision
               you make.
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            {/* Phase 1 */}
+            {/* Learning */}
             <div className="bg-white rounded-2xl p-8 shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
               <div className="w-12 h-12 bg-teal-100 rounded-xl flex items-center justify-center mb-6">
                 <svg className="w-6 h-6 text-teal-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
                 </svg>
               </div>
-              <div className="text-sm font-semibold text-teal-600 mb-2">Phase 1</div>
+              <div className="text-sm font-semibold text-teal-600 mb-2">Learning</div>
               <h3 className="text-xl font-bold text-gray-900 mb-3">Learning</h3>
               <p className="text-gray-600 text-sm leading-relaxed">
                 Sifty scans your gallery and builds a profile of your photo
@@ -117,14 +117,14 @@ export default function Home() {
               </p>
             </div>
 
-            {/* Phase 2 */}
+            {/* Cleaning */}
             <div className="bg-white rounded-2xl p-8 shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
               <div className="w-12 h-12 bg-teal-100 rounded-xl flex items-center justify-center mb-6">
                 <svg className="w-6 h-6 text-teal-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                 </svg>
               </div>
-              <div className="text-sm font-semibold text-teal-600 mb-2">Phase 2</div>
+              <div className="text-sm font-semibold text-teal-600 mb-2">Cleaning</div>
               <h3 className="text-xl font-bold text-gray-900 mb-3">Cleaning</h3>
               <p className="text-gray-600 text-sm leading-relaxed">
                 Armed with your preferences, the AI sorts remaining photos with
@@ -279,6 +279,53 @@ export default function Home() {
               />
             </div>
           </div>
+
+          {/* Feature 4: Keyword Search */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mt-24">
+            <div className="flex justify-center">
+              <Image
+                src="/ai-context.png"
+                alt="AI-Powered Keyword Search"
+                width={260}
+                height={520}
+                className="rounded-[2rem] shadow-xl border border-gray-200"
+              />
+            </div>
+            <div>
+              <div className="text-sm font-semibold text-teal-600 mb-2 uppercase tracking-wider">
+                Instant Discovery
+              </div>
+              <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
+                Find any photo by describing it
+              </h3>
+              <p className="text-gray-600 leading-relaxed mb-6">
+                Sifty&apos;s AI analysis creates a rich description for every photo
+                in your gallery &mdash; stored locally on your device. Search for
+                &ldquo;passport photo&rdquo;, &ldquo;white pants at beach&rdquo;,
+                or &ldquo;sunset in Bali&rdquo; and find exactly what you need in seconds.
+              </p>
+              <ul className="space-y-3">
+                <li className="flex items-start gap-3">
+                  <svg className="w-5 h-5 text-teal-500 mt-0.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span className="text-sm text-gray-600">Semantic search powered by AI-generated descriptions</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <svg className="w-5 h-5 text-teal-500 mt-0.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span className="text-sm text-gray-600">Works entirely on-device &mdash; fast and private</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <svg className="w-5 h-5 text-teal-500 mt-0.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span className="text-sm text-gray-600">Find photos by people, places, objects, or clothing</span>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -289,8 +336,8 @@ export default function Home() {
             Ready to declutter your gallery?
           </h2>
           <p className="text-teal-100 text-lg mb-8 max-w-2xl mx-auto">
-            Join thousands of users who&apos;ve reclaimed their storage space with
-            Sifty AI. Download free on Android and iOS.
+            Download Sifty AI free on Android and iOS and start reclaiming
+            your storage space.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link

@@ -125,7 +125,7 @@ export default function Download() {
                 AI-Powered Sorting
               </h3>
               <p className="text-sm text-gray-600">
-                2-phase system that learns your preferences and sorts photos
+                AI system that learns your preferences and sorts photos
                 with increasing accuracy.
               </p>
             </div>
