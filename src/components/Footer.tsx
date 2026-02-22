@@ -36,6 +36,11 @@ export default function Footer() {
                   About
                 </Link>
               </li>
+              <li>
+                <Link href="/projects" className="hover:text-teal-400 transition-colors">
+                  Other Projects
+                </Link>
+              </li>
             </ul>
           </div>
 
