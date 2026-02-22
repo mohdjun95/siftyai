@@ -7,7 +7,7 @@ export const metadata: Metadata = {
     "Upload any document with a Linear Programming problem. Gemini AI extracts the math. OR-Tools finds the optimal solution with sensitivity analysis.",
 };
 
-const LIVE_URL = "https://solver.siftyai.com";
+const LIVE_URL = "https://solver.siftyai.com/app";
 const GITHUB_URL = "https://github.com/mohdjun95/optisolve-ai";
 
 const features = [
