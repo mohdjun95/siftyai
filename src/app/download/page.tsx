@@ -88,14 +88,14 @@ export default function Download() {
             </div>
 
             <div className="flex justify-center">
-              <div className="relative w-[260px]">
-                <div className="absolute -inset-4 bg-teal-400/20 rounded-[3rem] blur-2xl"></div>
+              <div className="relative w-full">
+                <div className="absolute -inset-4 bg-teal-400/20 rounded-3xl blur-2xl"></div>
                 <Image
                   src="/splash.png"
                   alt="Sifty AI Splash Screen"
-                  width={260}
-                  height={520}
-                  className="relative rounded-[2rem] shadow-2xl"
+                  width={800}
+                  height={500}
+                  className="relative w-full h-auto rounded-2xl shadow-2xl"
                   priority
                 />
               </div>
