@@ -43,14 +43,14 @@ export default function Home() {
             </div>
 
             <div className="relative flex justify-center">
-              <div className="relative w-[260px] md:w-[280px]">
-                <div className="absolute -inset-4 bg-teal-200/30 rounded-[3rem] blur-2xl"></div>
+              <div className="relative w-full">
+                <div className="absolute -inset-4 bg-teal-200/30 rounded-3xl blur-2xl"></div>
                 <Image
                   src="/dashboard.png"
                   alt="Sifty AI Dashboard"
-                  width={280}
-                  height={560}
-                  className="relative rounded-[2rem] shadow-2xl border border-gray-200"
+                  width={800}
+                  height={500}
+                  className="relative w-full h-auto rounded-2xl shadow-2xl border border-gray-200"
                   priority
                 />
               </div>
