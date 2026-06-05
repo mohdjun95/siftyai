@@ -61,7 +61,7 @@ export default function About() {
             </div>
             <div className="md:col-span-2 flex items-center justify-center">
               <Image
-                src="/dashboard-2.png"
+                src="/ai-learning.png"
                 alt="Sifty Dashboard Overview"
                 width={240}
                 height={480}
