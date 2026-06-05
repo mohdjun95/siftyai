@@ -279,10 +279,11 @@ export default function Features() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 md:gap-6 max-w-3xl mx-auto">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
             {[
+              { src: "/ai-learning.png", alt: "Home Screen" },
               { src: "/review-keep.png", alt: "Review - Keep" },
-              { src: "/review-delete.png", alt: "Review - Delete" },
+              { src: "/review-analyze.png", alt: "AI Analysis" },
               { src: "/phase-complete.png", alt: "Phase Complete" },
             ].map((img) => (
               <div key={img.src} className="group">
