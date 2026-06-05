@@ -46,7 +46,9 @@ export default function Download() {
 
                 {/* App Store Button */}
                 <a
-                  href="#"
+                  href="https://apps.apple.com/my/app/sifty-declutter-your-gallery/id6759360203"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-flex items-center gap-3 bg-black text-white px-6 py-3 rounded-xl hover:bg-gray-900 transition-colors"
                 >
                   <svg className="w-8 h-8" viewBox="0 0 24 24" fill="currentColor">

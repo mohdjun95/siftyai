@@ -61,7 +61,7 @@ export default function Footer() {
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-teal-400 transition-colors">
+                <a href="https://apps.apple.com/my/app/sifty-declutter-your-gallery/id6759360203" target="_blank" rel="noopener noreferrer" className="hover:text-teal-400 transition-colors">
                   Apple App Store
                 </a>
               </li>
