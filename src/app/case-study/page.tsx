@@ -291,13 +291,13 @@ export default function CaseStudy() {
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-16">
-            <div className="flex justify-center">
+            <div className="flex justify-center w-full">
               <Image
                 src="/dashboard.png"
                 alt="Sifty Dashboard"
-                width={240}
-                height={480}
-                className="rounded-[2rem] shadow-xl border border-gray-200"
+                width={800}
+                height={500}
+                className="w-full h-auto rounded-2xl shadow-xl border border-gray-200"
               />
             </div>
             <div>
@@ -532,13 +532,13 @@ export default function CaseStudy() {
                 ))}
               </div>
             </div>
-            <div className="flex justify-center">
+            <div className="flex justify-center w-full">
               <Image
                 src="/ai-context.png"
                 alt="AI Context and Search"
-                width={240}
-                height={480}
-                className="rounded-[2rem] shadow-xl border border-gray-200"
+                width={800}
+                height={500}
+                className="w-full h-auto rounded-2xl shadow-xl border border-gray-200"
               />
             </div>
           </div>
