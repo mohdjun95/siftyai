@@ -279,19 +279,18 @@ export default function Features() {
             </p>
           </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 md:gap-6 max-w-3xl mx-auto">
             {[
-              { src: "/dashboard.png", alt: "Dashboard", w: 800, h: 500 },
-              { src: "/review-keep.png", alt: "Review - Keep", w: 260, h: 520 },
-              { src: "/review-delete.png", alt: "Review - Delete", w: 260, h: 520 },
-              { src: "/phase-complete.png", alt: "Phase Complete", w: 260, h: 520 },
+              { src: "/review-keep.png", alt: "Review - Keep" },
+              { src: "/review-delete.png", alt: "Review - Delete" },
+              { src: "/phase-complete.png", alt: "Phase Complete" },
             ].map((img) => (
               <div key={img.src} className="group">
                 <Image
                   src={img.src}
                   alt={img.alt}
-                  width={img.w}
-                  height={img.h}
+                  width={260}
+                  height={520}
                   className="rounded-2xl shadow-md border border-gray-100 group-hover:shadow-lg transition-shadow w-full h-auto"
                 />
                 <p className="mt-2 text-xs text-center text-gray-400">
