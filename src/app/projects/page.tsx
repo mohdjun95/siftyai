@@ -27,12 +27,12 @@ export default function ProjectsPage() {
   return (
     <>
       {/* Header */}
-      <section className="bg-gradient-to-br from-teal-50 via-white to-teal-50 py-20">
+      <section className="bg-night-950 py-20">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900">
-            Other <span className="text-teal-600">Projects</span>
+          <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight text-mist-bright">
+            Other <span className="text-teal-300">Projects</span>
           </h1>
-          <p className="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">
+          <p className="mt-4 text-lg text-mist-dim max-w-2xl mx-auto">
             AI-powered tools and applications built alongside Nytcrew.
           </p>
         </div>

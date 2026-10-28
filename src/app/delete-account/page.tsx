@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import PageHero from "@/components/PageHero";
 import { PRIVACY_URL } from "@/lib/nytcrew";
 
 export const metadata: Metadata = {
@@ -13,17 +14,14 @@ const SUBJECT = "Delete my Nytcrew account";
 
 export default function DeleteAccount() {
   return (
-    <section className="bg-white">
-      <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24 text-gray-700 leading-relaxed">
-        <h1 className="text-3xl md:text-4xl font-bold text-gray-900">
-          Delete your Nytcrew account
-        </h1>
-        <p className="mt-6">
-          Nytcrew was called Sifty until version 2.8; this works for accounts made
-          with either.
-        </p>
+    <>
+    <PageHero eyebrow="Your data" title="Delete your Nytcrew account">
+      Nytcrew was called Sifty until version 2.8; this works for accounts made with either.
+    </PageHero>
+    <section className="bg-dawn-100 px-6 py-16 md:py-20 text-ink">
+      <div className="mx-auto max-w-2xl leading-relaxed text-ink-soft">
 
-        <h2 className="mt-10 mb-3 text-xl font-bold text-gray-900">How to ask</h2>
+        <h2 className="mt-10 mb-3 text-2xl font-bold text-ink first:mt-0">How to ask</h2>
         <ol className="list-decimal pl-6 space-y-2">
           <li>
             From the email address you signed in with, write to{" "}
@@ -39,7 +37,7 @@ export default function DeleteAccount() {
           <li>We delete everything below within 30 days and confirm by email.</li>
         </ol>
 
-        <h2 className="mt-10 mb-3 text-xl font-bold text-gray-900">What is deleted</h2>
+        <h2 className="mt-10 mb-3 text-2xl font-bold text-ink first:mt-0">What is deleted</h2>
         <ul className="list-disc pl-6 space-y-2">
           <li>Your account (email, name and user ID)</li>
           <li>Your cloud backup: scores, masked descriptions, file names and your keep/delete choices</li>
@@ -47,7 +45,7 @@ export default function DeleteAccount() {
           <li>The request times kept to rate-limit scoring</li>
         </ul>
 
-        <h2 className="mt-10 mb-3 text-xl font-bold text-gray-900">What isn&apos;t affected</h2>
+        <h2 className="mt-10 mb-3 text-2xl font-bold text-ink first:mt-0">What isn&apos;t affected</h2>
         <ul className="list-disc pl-6 space-y-2">
           <li>Your photos. They were never uploaded and stay on your phone.</li>
           <li>
@@ -65,5 +63,6 @@ export default function DeleteAccount() {
         </p>
       </div>
     </section>
+    </>
   );
 }

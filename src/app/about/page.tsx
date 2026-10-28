@@ -12,13 +12,13 @@ export default function About() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-gradient-to-b from-teal-50 to-white py-20 md:py-28">
+      <section className="bg-night-950 py-20 md:py-28">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900">
+          <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight text-mist-bright">
             The story behind{" "}
-            <span className="text-teal-600">Nytcrew</span>
+            <span className="text-teal-300">Nytcrew</span>
           </h1>
-          <p className="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">
+          <p className="mt-4 text-lg text-mist-dim max-w-2xl mx-auto">
             A product built from a real problem &mdash; the endless clutter in our
             phone galleries &mdash; and the belief that AI can solve it thoughtfully.
           </p>

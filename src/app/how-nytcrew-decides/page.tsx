@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import FaqList from "@/components/FaqList";
+import PageHero from "@/components/PageHero";
 import JsonLd from "@/components/JsonLd";
 import { PLAY_URL, SITE_URL, faqJsonLd, type Faq } from "@/lib/nytcrew";
 
@@ -58,23 +59,18 @@ const articleJsonLd = {
 
 export default function HowNytcrewDecides() {
   return (
-    <article className="bg-white">
+    <article>
       <JsonLd data={articleJsonLd} />
       <JsonLd data={faqJsonLd(faqs)} />
 
-      <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24 text-gray-700 leading-relaxed">
-        <h1 className="text-3xl md:text-4xl font-bold text-gray-900 leading-tight">
-          {title}
-        </h1>
+      <PageHero eyebrow="How it decides" title={title}>
+        While you sleep, Nytcrew gives every photo seven scores from a description written on
+        your phone, and weighs them the way you would, learned from your own keeps and deletes.
+        People, places and important documents are protected. Nothing is deleted without you.
+      </PageHero>
 
-        <p className="mt-8 text-lg">
-          <strong className="text-gray-900">In short:</strong> while you sleep,
-          Nytcrew gives every photo seven scores from a description written on
-          your phone, and weighs them the way you would, learned from your own
-          keeps and deletes. Old screenshots and screen content get set aside;
-          people, places and important documents are protected. Nothing is
-          deleted without you.
-        </p>
+      <div className="bg-dawn-100 px-6 py-16 md:py-20 text-ink">
+      <div className="mx-auto max-w-3xl leading-[1.7] text-ink-soft">
 
         <H2>1. A description, written on your phone</H2>
         <p>
@@ -91,11 +87,14 @@ export default function HowNytcrewDecides() {
           links, @handles and long numbers are masked first. Each photo gets a
           score from 0 to 10 for:
         </p>
-        <dl className="mt-6 space-y-4">
-          {signals.map(([name, body]) => (
-            <div key={name}>
-              <dt className="font-semibold text-gray-900">{name}</dt>
-              <dd className="text-gray-600">{body}</dd>
+        <dl className="mt-6 grid grid-cols-[repeat(auto-fit,minmax(220px,1fr))] gap-3">
+          {signals.map(([name, body], i) => (
+            <div key={name} className="rounded-[14px] border border-[#c2d9d4] bg-white px-5 py-4">
+              <dt className="flex items-baseline gap-2.5 font-display text-lg font-bold text-ink">
+                <span className="font-mono text-xs font-normal text-teal-700">0{i + 1}</span>
+                {name}
+              </dt>
+              <dd className="mt-1 text-sm leading-normal text-ink-soft">{body}</dd>
             </div>
           ))}
         </dl>
@@ -142,7 +141,7 @@ export default function HowNytcrewDecides() {
             href={PLAY_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center justify-center bg-teal-600 text-white px-5 py-2.5 rounded-full text-sm font-medium hover:bg-teal-700 transition-colors"
+            className="inline-flex min-h-12 items-center rounded-full bg-teal-600 px-6 text-base font-semibold text-white transition-colors hover:bg-teal-700"
           >
             Get Nytcrew on Google Play
           </a>
@@ -151,12 +150,15 @@ export default function HowNytcrewDecides() {
         <H2>FAQ</H2>
         <FaqList faqs={faqs} />
       </div>
+      </div>
     </article>
   );
 }
 
 function H2({ children }: { children: React.ReactNode }) {
   return (
-    <h2 className="mt-12 mb-4 text-2xl font-bold text-gray-900">{children}</h2>
+    <h2 className="mt-12 mb-4 text-[clamp(24px,2.6vw,32px)] font-bold tracking-[-0.02em] text-ink first:mt-0">
+      {children}
+    </h2>
   );
 }
