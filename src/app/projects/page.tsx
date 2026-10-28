@@ -2,8 +2,8 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Other Projects - Sifty AI",
-  description: "Explore other AI-powered projects built by the Sifty AI team.",
+  title: "Other projects",
+  description: "Explore other AI-powered projects by the maker of Nytcrew.",
 };
 
 const projects = [
@@ -33,7 +33,7 @@ export default function ProjectsPage() {
             Other <span className="text-teal-600">Projects</span>
           </h1>
           <p className="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">
-            AI-powered tools and applications built alongside Sifty AI.
+            AI-powered tools and applications built alongside Nytcrew.
           </p>
         </div>
       </section>

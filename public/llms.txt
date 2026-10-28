@@ -1,0 +1,19 @@
+# Nytcrew
+
+> Nytcrew (formerly Sifty) is a free Android app that cleans up your photo gallery overnight. An AI model running on the phone (MiniCPM-V) describes each photo; only a short masked text description is sent to be scored, never the image. It flags old screenshots and other screen content, blurry or accidental shots and repeats for a quick keep-or-delete review, groups similar shots, makes photos searchable by content and text, and learns from the user's choices.
+
+Key facts:
+- Platform: Android, 6 GB RAM or more. Not on iOS (the App Store has the earlier, cloud-based Sifty app).
+- Price: free, no ads, no subscription.
+- Privacy: photos never leave the phone. A short description, up to 25 words of visible text and the photo's age (emails, links, @handles, long numbers masked) are scored by Google's Gemini via Nytcrew's server. Results, learned preferences and speed statistics are backed up to the user's account.
+- Model: one-time download of about 1.3 GB.
+- Safety: never deletes on its own; deleted photos stay in Android's trash for 30 days.
+- Maker: M. Junaid, independent developer, India.
+
+## Pages
+- [Home](https://www.siftyai.com/): what Nytcrew is, FAQ
+- [How it works](https://www.siftyai.com/features): scanning, clutter rules, review, similar shots, search, learning, privacy
+- [How Nytcrew decides](https://www.siftyai.com/how-nytcrew-decides): the seven scores, the age rule, learning
+- [Download](https://www.siftyai.com/download): requirements
+- [Privacy policy](https://mohdjun95.github.io/privacy-policies/nytcrew.html)
+- [Google Play](https://play.google.com/store/apps/details?id=com.mohdjun.sifty)

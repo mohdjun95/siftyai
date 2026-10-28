@@ -7,11 +7,9 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Brand */}
           <div className="md:col-span-2">
-            <h3 className="text-xl font-bold text-white mb-2">Sifty AI</h3>
+            <h3 className="text-xl font-bold text-white mb-2">Nytcrew</h3>
             <p className="text-sm text-gray-400 max-w-md">
-              The AI-powered photo sorter that learns your preferences and helps
-              you reclaim storage space. Keep what matters, delete what
-              doesn&apos;t.
+              Your photo night crew. A free Android app that tidies your gallery while you sleep, with AI that runs on your phone. Formerly Sifty.
             </p>
           </div>
 
@@ -23,7 +21,12 @@ export default function Footer() {
             <ul className="space-y-2 text-sm">
               <li>
                 <Link href="/features" className="hover:text-teal-400 transition-colors">
-                  Features
+                  How it works
+                </Link>
+              </li>
+              <li>
+                <Link href="/how-nytcrew-decides" className="hover:text-teal-400 transition-colors">
+                  How it decides
                 </Link>
               </li>
               <li>
@@ -60,22 +63,17 @@ export default function Footer() {
                   Google Play Store
                 </a>
               </li>
-              <li>
-                <a href="https://apps.apple.com/my/app/sifty-declutter-your-gallery/id6759360203" target="_blank" rel="noopener noreferrer" className="hover:text-teal-400 transition-colors">
-                  Apple App Store
-                </a>
-              </li>
             </ul>
           </div>
         </div>
 
         <div className="mt-10 pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-xs text-gray-500">
-            &copy; {new Date().getFullYear()} Sifty AI. All rights reserved.
+            &copy; {new Date().getFullYear()} Nytcrew. All rights reserved.
           </p>
           <div className="flex gap-6 text-xs text-gray-500">
-            <a href="#" className="hover:text-gray-300">Privacy Policy</a>
-            <a href="#" className="hover:text-gray-300">Terms of Service</a>
+            <a href="/privacy" className="hover:text-gray-300">Privacy Policy</a>
+            <a href="/delete-account" className="hover:text-gray-300">Delete account</a>
           </div>
         </div>
       </div>

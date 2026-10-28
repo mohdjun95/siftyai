@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <!-- The app's SiftyLogo geometry (lib/shared/widgets/sifty_logo.dart): 32 px tile, 8 px corners,
+       white diamond 14 px across (path 12 px + 2 px stroke), 2 px corners, teal-600. -->
+  <rect width="32" height="32" rx="8" fill="#0D9488"/>
+  <rect x="10" y="10" width="12" height="12" rx="1" fill="none" stroke="#FFFFFF" stroke-width="2"
+        stroke-linejoin="round" transform="rotate(45 16 16)"/>
+</svg>

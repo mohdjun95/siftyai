@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Case Study - Sifty AI | PM Portfolio",
+  title: "Case study: building Sifty AI (now Nytcrew)",
   description:
     "Product management case study: How Sifty AI was designed, built, and launched — an AI-powered photo decluttering app using Gemini LLM.",
 };
@@ -18,6 +18,10 @@ export default function CaseStudy() {
             <span className="w-2 h-2 bg-teal-500 rounded-full"></span>
             PM Case Study
           </div>
+          <p className="mb-6 text-sm text-gray-600 bg-amber-50 border border-amber-200 rounded-xl px-4 py-3">
+            This case study covers Sifty v1 (2025&ndash;26), which analysed photos in the cloud.
+            The app is now <Link href="/" className="underline">Nytcrew</Link> and runs its AI on the phone.
+          </p>
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight">
             Building Sifty AI: From Personal
             <br />

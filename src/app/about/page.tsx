@@ -3,9 +3,9 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "About - Sifty AI",
+  title: "About",
   description:
-    "The product story behind Sifty AI. Learn about the problem, the process, and the product management journey that shaped this app.",
+    "The product story behind Nytcrew (formerly Sifty AI). Learn about the problem, the process, and the product management journey that shaped this app.",
 };
 
 export default function About() {
@@ -16,7 +16,7 @@ export default function About() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900">
             The story behind{" "}
-            <span className="text-teal-600">Sifty AI</span>
+            <span className="text-teal-600">Nytcrew</span>
           </h1>
           <p className="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">
             A product built from a real problem &mdash; the endless clutter in our
@@ -125,6 +125,18 @@ export default function About() {
                 label="Ship"
                 title="Launch on Android & iOS"
                 description="Shipped on both platforms with a focus on trust: safe trash bin, clear AI reasoning for every recommendation, and full user control. The AI suggests, but you always decide."
+              />
+              <TimelineItem
+                side="right"
+                label="Rethink"
+                title="Private Mode: the AI moves onto the phone"
+                description="Sending photos to the cloud was the one thing people hesitated over. Version 2.6 runs a vision model on the phone itself, so photos never leave it; only a masked text description is scored. The learning and cleaning phases, credits and questionnaire went too: one continuous scan, one short review."
+              />
+              <TimelineItem
+                side="left"
+                label="Rename"
+                title="Sifty becomes Nytcrew"
+                description="Scanning every photo on a phone works best overnight while it charges, so the app became your photo night crew: Nytcrew (version 2.8)."
               />
             </div>
           </div>

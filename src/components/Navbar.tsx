@@ -20,8 +20,8 @@ export default function Navbar() {
   const pathname = usePathname();
 
   const links = [
-    { href: "/", label: "Home" },
-    { href: "/features", label: "Features" },
+    { href: "/features", label: "How it works" },
+    { href: "/how-nytcrew-decides", label: "How it decides" },
     { href: "/about", label: "About" },
     { href: "/case-study", label: "Case Study" },
     { href: "/download", label: "Download" },
@@ -44,19 +44,20 @@ export default function Navbar() {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-100">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          <Link href="/" className="flex items-center gap-2">
+          {/* Same as the app header: 32 px mark, 10 px gap, wordmark bold and tight. */}
+          <Link href="/" className="flex items-center gap-2.5">
             <Image
-              src="/logo.png"
-              alt="Sifty AI"
-              width={40}
-              height={40}
-              className="rounded-full"
+              src="/logo.svg"
+              alt=""
+              width={32}
+              height={32}
+              priority
             />
-            <span className="text-xl font-bold text-teal-700">Sifty AI</span>
+            <span className="text-2xl font-bold tracking-tight text-gray-900">Nytcrew</span>
           </Link>
 
           {/* Desktop nav */}
-          <div className="hidden md:flex items-center gap-8">
+          <div className="hidden lg:flex items-center gap-8">
             {links.map((link) => (
               <Link
                 key={link.href}
@@ -126,7 +127,7 @@ export default function Navbar() {
 
           {/* Mobile hamburger */}
           <button
-            className="md:hidden p-2 text-gray-600"
+            className="lg:hidden p-2 text-gray-600"
             onClick={() => setMobileOpen(!mobileOpen)}
             aria-label="Toggle menu"
           >
@@ -143,7 +144,7 @@ export default function Navbar() {
 
       {/* Mobile menu */}
       {mobileOpen && (
-        <div className="md:hidden bg-white border-t border-gray-100 px-4 pb-4">
+        <div className="lg:hidden bg-white border-t border-gray-100 px-4 pb-4">
           {links.map((link) => (
             <Link
               key={link.href}
