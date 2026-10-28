@@ -2,20 +2,20 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-900 text-gray-300">
+    <footer className="bg-night-950 text-mist-dim border-t border-white/10">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Brand */}
           <div className="md:col-span-2">
-            <h3 className="text-xl font-bold text-white mb-2">Nytcrew</h3>
-            <p className="text-sm text-gray-400 max-w-md">
+            <h3 className="font-display text-xl font-bold text-mist-bright mb-2">Nytcrew</h3>
+            <p className="text-sm text-mist-faint max-w-md">
               Your photo night crew. A free Android app that tidies your gallery while you sleep, with AI that runs on your phone. Formerly Sifty.
             </p>
           </div>
 
           {/* Links */}
           <div>
-            <h4 className="text-sm font-semibold text-white uppercase tracking-wider mb-4">
+            <h4 className="text-sm font-semibold text-mist-bright uppercase tracking-wider mb-4">
               Product
             </h4>
             <ul className="space-y-2 text-sm">
@@ -54,7 +54,7 @@ export default function Footer() {
 
           {/* Download */}
           <div>
-            <h4 className="text-sm font-semibold text-white uppercase tracking-wider mb-4">
+            <h4 className="text-sm font-semibold text-mist-bright uppercase tracking-wider mb-4">
               Get the App
             </h4>
             <ul className="space-y-2 text-sm">
@@ -67,13 +67,13 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-10 pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-xs text-gray-500">
-            &copy; {new Date().getFullYear()} Nytcrew. All rights reserved.
+        <div className="mt-10 pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4">
+          <p className="text-xs text-mist-faint">
+            &copy; {new Date().getFullYear()} Nytcrew. Made by M. Junaid, an independent developer.
           </p>
-          <div className="flex gap-6 text-xs text-gray-500">
-            <a href="/privacy" className="hover:text-gray-300">Privacy Policy</a>
-            <a href="/delete-account" className="hover:text-gray-300">Delete account</a>
+          <div className="flex gap-6 text-xs text-mist-faint">
+            <a href="/privacy" className="hover:text-mist">Privacy Policy</a>
+            <a href="/delete-account" className="hover:text-mist">Delete account</a>
           </div>
         </div>
       </div>

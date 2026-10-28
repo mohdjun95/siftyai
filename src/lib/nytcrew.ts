@@ -11,38 +11,39 @@ export const IOS_URL =
 
 export type Faq = { q: string; a: string };
 
+// The home page FAQ, always visible and mirrored in its FAQPage JSON-LD.
 export const appFaqs: Faq[] = [
   {
     q: "What is Nytcrew?",
-    a: "Nytcrew is a free Android app that cleans up your photo gallery overnight. An AI model running on your phone sets aside clutter (old screenshots and chats, blurry shots, repeats) for a quick keep-or-delete, groups similar shots and makes every photo searchable. Your photos are never uploaded.",
+    a: "A free Android app that works the night shift on your phone: while it charges, an on-device AI goes through your photos and sets aside the ones you'd never miss for a quick yes or no in the morning. Your photos are never uploaded.",
   },
   {
-    q: "Is Nytcrew free?",
-    a: "Yes. Nytcrew is free, with no ads and no subscription.",
+    q: "Is it really free?",
+    a: "Yes. No ads, no subscription.",
   },
   {
-    q: "Does Nytcrew upload my photos?",
-    a: "No. Photos are analysed on your phone. Only a short text description of each photo, with emails, links, @handles and long numbers masked, is sent to be scored. Images are never sent anywhere.",
+    q: "Does it upload my photos?",
+    a: "No. Photos are looked at on your phone. Only a short description of each one, with emails, links, @handles and long numbers masked, is sent to be scored.",
   },
   {
-    q: "Is Nytcrew the same app as Sifty?",
-    a: "Yes. Sifty was renamed Nytcrew (said \"night crew\") in version 2.8. Same app, same Play listing.",
+    q: "Do I have to open it every night?",
+    a: "No. Once it's set up, it starts by itself whenever the phone charges at night, and reschedules itself after app updates.",
   },
   {
-    q: "Does Nytcrew work on iPhone?",
-    a: "Not yet. Nytcrew is Android only. The App Store has the earlier Sifty app, which analyses photos in the cloud.",
+    q: "Will it delete without asking?",
+    a: "Never. Every delete is yours, and Android keeps deleted photos in the trash for 30 days.",
   },
   {
-    q: "Will Nytcrew delete photos without asking?",
-    a: "No. Nytcrew only suggests. You confirm every delete, and Android keeps deleted photos in the trash for 30 days.",
+    q: "Is this Sifty?",
+    a: "Yes. Sifty became Nytcrew (said \"night crew\") in version 2.8. Same app, same Play listing.",
   },
   {
-    q: "Why does Nytcrew work at night?",
-    a: "Running an AI model on every photo takes battery and processing power. Scanning while the phone charges overnight means it never slows you down during the day. It pauses if the phone gets warm or the battery runs low.",
+    q: "Which phones does it work on?",
+    a: "Android phones with 6 GB of RAM or more. The AI model is a one-time download of about 1.3 GB.",
   },
   {
-    q: "Which phones does Nytcrew work on?",
-    a: "Android phones with 6 GB of RAM or more. The on-device AI model is a one-time download of about 1.3 GB.",
+    q: "iPhone?",
+    a: "Not yet. Nytcrew is Android only for now. The App Store still has the earlier Sifty app, which analyses photos in the cloud.",
   },
 ];
 

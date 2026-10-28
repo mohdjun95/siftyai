@@ -41,7 +41,7 @@ export default function Navbar() {
   const isProjectsActive = pathname.startsWith("/projects");
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-100">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-night-950/90 backdrop-blur-md border-b border-white/10">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Same as the app header: 32 px mark, 10 px gap, wordmark bold and tight. */}
@@ -53,7 +53,7 @@ export default function Navbar() {
               height={32}
               priority
             />
-            <span className="text-2xl font-bold tracking-tight text-gray-900">Nytcrew</span>
+            <span className="font-display text-2xl font-bold tracking-tight text-mist-bright">Nytcrew</span>
           </Link>
 
           {/* Desktop nav */}
@@ -64,8 +64,8 @@ export default function Navbar() {
                 href={link.href}
                 className={`text-sm font-medium transition-colors ${
                   pathname === link.href
-                    ? "text-teal-600"
-                    : "text-gray-600 hover:text-teal-600"
+                    ? "text-teal-400"
+                    : "text-mist-dim hover:text-teal-300"
                 }`}
               >
                 {link.label}
@@ -77,7 +77,7 @@ export default function Navbar() {
               <button
                 onClick={() => setProjectsOpen(!projectsOpen)}
                 className={`text-sm font-medium transition-colors flex items-center gap-1 ${
-                  isProjectsActive ? "text-teal-600" : "text-gray-600 hover:text-teal-600"
+                  isProjectsActive ? "text-teal-400" : "text-mist-dim hover:text-teal-300"
                 }`}
               >
                 Other Projects
@@ -119,7 +119,7 @@ export default function Navbar() {
 
             <Link
               href="/download"
-              className="bg-teal-600 text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-teal-700 transition-colors"
+              className="inline-flex items-center min-h-11 bg-teal-400 text-[#04201c] px-5 rounded-full text-sm font-semibold hover:bg-teal-300 transition-colors"
             >
               Get the App
             </Link>
@@ -127,7 +127,7 @@ export default function Navbar() {
 
           {/* Mobile hamburger */}
           <button
-            className="lg:hidden p-2 text-gray-600"
+            className="lg:hidden p-2 text-mist-dim"
             onClick={() => setMobileOpen(!mobileOpen)}
             aria-label="Toggle menu"
           >
@@ -144,30 +144,30 @@ export default function Navbar() {
 
       {/* Mobile menu */}
       {mobileOpen && (
-        <div className="lg:hidden bg-white border-t border-gray-100 px-4 pb-4">
+        <div className="lg:hidden bg-night-950 border-t border-white/10 px-4 pb-4">
           {links.map((link) => (
             <Link
               key={link.href}
               href={link.href}
               onClick={() => setMobileOpen(false)}
-              className={`block py-3 text-sm font-medium border-b border-gray-50 ${
+              className={`block py-3 text-sm font-medium border-b border-white/5 ${
                 pathname === link.href
-                  ? "text-teal-600"
-                  : "text-gray-600"
+                  ? "text-teal-400"
+                  : "text-mist-dim"
               }`}
             >
               {link.label}
             </Link>
           ))}
           {/* Mobile: Other Projects section */}
-          <div className="py-3 border-b border-gray-50">
-            <p className="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-2">Other Projects</p>
+          <div className="py-3 border-b border-white/5">
+            <p className="text-xs font-semibold text-mist-faint uppercase tracking-wider mb-2">Other Projects</p>
             {projects.map((p) => (
               <Link
                 key={p.href}
                 href={p.href}
                 onClick={() => setMobileOpen(false)}
-                className="block py-1.5 text-sm font-medium text-gray-600"
+                className="block py-1.5 text-sm font-medium text-mist-dim"
               >
                 {p.label}
               </Link>
@@ -176,7 +176,7 @@ export default function Navbar() {
           <Link
             href="/download"
             onClick={() => setMobileOpen(false)}
-            className="block mt-3 text-center bg-teal-600 text-white px-4 py-2 rounded-full text-sm font-medium"
+            className="block mt-3 text-center bg-teal-400 text-[#04201c] px-4 py-3 rounded-full text-sm font-semibold"
           >
             Get the App
           </Link>

@@ -23,8 +23,24 @@
   --color-gray-700: #374151;
   --color-gray-800: #1f2937;
   --color-gray-900: #111827;
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  /* Night palette (Claude Design "night to morning") */
+  --color-night-950: #081113;
+  --color-night-900: #0b1719;
+  --color-night-800: #0e1c1f;
+  --color-night-700: #12282b;
+  --color-mist: #e3efed;
+  --color-mist-bright: #f4faf9;
+  --color-mist-dim: #b4c9c6;
+  --color-mist-faint: #8fa7a3;
+  --color-lamp: #e9c77b;
+  --color-moon: #e9d9b0;
+  --color-dawn-100: #f3f8f6;
+  --color-dawn-200: #dcebe7;
+  --color-ink: #10201e;
+  --color-ink-soft: #34504c;
+  --font-sans: var(--font-plex-sans);
+  --font-mono: var(--font-plex-mono);
+  --font-display: var(--font-bricolage);
 }
 
 body {
@@ -34,4 +50,19 @@ body {
 
 html {
   scroll-behavior: smooth;
+}
+
+h1, h2, h3 {
+  font-family: var(--font-bricolage), sans-serif;
+}
+
+summary {
+  list-style: none;
+  cursor: pointer;
+}
+summary::-webkit-details-marker {
+  display: none;
+}
+details[open] .chev {
+  transform: rotate(180deg);
 }
